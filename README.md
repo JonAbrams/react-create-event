@@ -1,6 +1,6 @@
 # react-create-event
 
-A simple library to send events between React components.
+A simple library for sending events between React components.
 
 Features:
 
