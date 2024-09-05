@@ -1,0 +1,32 @@
+{
+  "name": "react-create-event",
+  "version": "1.0.0",
+  "description": "A simple library to send events between React components.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonAbrams/react-create-event.git"
+  },
+  "keywords": [
+    "react",
+    "events",
+    "hooks"
+  ],
+  "author": "Jon Abrams (https://threads.net/@jon.abrams)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/JonAbrams/react-create-event/issues"
+  },
+  "homepage": "https://github.com/JonAbrams/react-create-event#readme",
+  "peerDependencies": {
+    "react": ">17"
+  },
+  "devDependencies": {
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4"
+  }
+}
