@@ -82,7 +82,7 @@ export function TorpedoLauncher() {
     const results = torpedoEvent.fire({ x, y });
     const hits = results.filter((r) => r).length;
     setHitCount((hC) => hC + hits);
-  });
+  }, []);
 
   return <>
     <button onClick={fireTorpedo}>FIRE TORPEDO!</button>
