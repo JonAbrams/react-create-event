@@ -10,8 +10,6 @@ Features:
 - Can create events that include details from the sender.
 - Can create events that include results from listeners.
 
-![banner](https://github.com/user-attachments/assets/73eaf373-af90-456f-8ba7-fc54594566a7)
-
 ## Install
 
 ```
