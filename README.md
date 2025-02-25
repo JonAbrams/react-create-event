@@ -47,7 +47,7 @@ export function HitCounter() {
 
   hitEvent.useListen(() => {
     setCount((c) => c + 1);
-  });
+  }, []);
 
   return <div>Count: {count}</div>;
 }

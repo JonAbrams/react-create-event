@@ -4,7 +4,7 @@ export type RCEvent<T, R> = {
   readonly fire: (details: T) => R[];
   readonly useListen: (
     listener: (details: T) => R,
-    dependencies?: any[]
+    dependencies: any[]
   ) => void;
   readonly listen: (listener: (details: T) => R) => void;
   readonly unlisten: (listener: (details: T) => R) => void;
@@ -26,7 +26,7 @@ export function createEvent<T = void, R = void>(): RCEvent<T, R> {
     listeners.delete(listener);
   }
 
-  function useListen(listener: Listener, dependencies?: any[]) {
+  function useListen(listener: Listener, dependencies: any[]) {
     useEffect(() => {
       listen(listener);
       return () => unlisten(listener);
